@@ -17,6 +17,7 @@
 import numpy as np
 import pandas as pd
 import datetime as datetime
+import time
 
 data_folder = "C:/Users/minho/kaggle dataset/g-research-crypto-forecasting/input/"
 
@@ -186,6 +187,7 @@ X_eth = pd.concat([log_return(eth.VWAP, periods=5),
                    upper_shadow(eth),
                    lower_shadow(eth)], axis=1)
 y_eth = eth.Target
+X_btc
 
 # +
 train_window = [totimestamp('01/05/2021'), totimestamp('30/05/2021')]
